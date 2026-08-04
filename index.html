@@ -8,16 +8,19 @@
 </head>
 <body>
 
-    <!-- Navigasyon -->
+    <!-- Navbar -->
     <nav>
-        <ul>
-            <li><a href="#"><img src="logo.png" alt="Logo" class="logo"></a></li>
-            <li><a class="header-menus" href="#programs">ANTRENMAN PROGRAMLARI</a></li>
-            <li><a class="header-menus" href="#packages">HİZMETLER</a></li>
-            <li><a class="header-menus" href="#calculator">KALORİ İHTİYACINI HESAPLA</a></li>
-            <li><a class="header-menus" href="#contact">BİZE KATIL</a></li>
-            <li><a class="header-menus" href="#contact">CANLI DESTEK</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="#" class="logo-text">DOĞU<span>.</span>COACHING</a>
+            <ul class="nav-links">
+                <li><a class="header-menus" href="#programs">ANTRENMAN PROGRAMLARI</a></li>
+                <li><a class="header-menus" href="#packages">HİZMETLER</a></li>
+                <li><a class="header-menus" href="#calculator">KALORİ İHTİYACINI HESAPLA</a></li>
+                <li><a class="header-menus" href="#faq">SSS</a></li>
+                <li><a class="header-menus" href="#contact">BİZE KATIL</a></li>
+                
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -28,7 +31,7 @@
         <a href="#programs" class="cta-button">Hemen Başla</a>
     </section>
 
-    <!-- Antrenman Programları Bölümü -->
+    <!-- Antrenman Programları -->
     <section class="programs" id="programs">
         <h2>Antrenman Programları</h2>
         <div class="programs-grid">
@@ -51,9 +54,7 @@
         </div>
     </section>
 
-    
-
-    <!-- Hizmetler Bölümü -->
+    <!-- Hizmetler -->
     <section class="services" id="packages">
         <h2>Hizmetler</h2>
         <div class="cards">
@@ -72,7 +73,7 @@
         </div>
     </section>
     
-    <!-- Günlük Kalori Hesaplayıcı Bölümü -->
+    <!-- Günlük Kalori Hesaplayıcı -->
     <section class="calculator" id="calculator">
         <h2>Günlük Kalori Hesaplayıcı</h2>
         <div class="calculator-container">
@@ -116,7 +117,7 @@
         </div>
     </section>
 
-    <!-- Hakkımda -->
+    <!-- Hakkımızda -->
     <section class="about">
         <h2>Hakkımızda</h2>
         <p>
@@ -124,16 +125,81 @@
         </p>
     </section>
 
-    <!-- İletişim / Footer -->
-    <section class="contact" id="contact">
-        <h2>İletişim</h2>
-        <img src="avatar.png" alt="Doğukan Muhtar" class="contact-photo">
-        <div class="footer-contact">
-            <span>Instagram: @dogukanmuhtar</span>
-            <span>E-Posta: dogukanmuhtar1@gmail.com</span>
-            <span>Telefon: +90 506 424 72 41 | KKTC Whatsapp: +90 548 866 47 27</span>
+    <!-- Sıkça Sorulan Sorular -->
+    <section class="faq-section" id="faq">
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Programlar tamamen online mı yürütülüyor?</h3>
+                <p>Evet, antrenman ve beslenme programlarınız tamamen online olarak hazırlanır ve haftalık düzenli check-in'ler ile takip edilir.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Beslenme programında yasaklı besinler var mı?</h3>
+                <p>Kesinlikle hayır. Esnek beslenme modeliyle sevdiğiniz gıdaları kalori ve makro hedeflerinize sadık kalarak tüketebilirsiniz.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Evde antrenman yapabilir miyim?</h3>
+                <p>Elbette. Ekipman durumunuza (ev, minimal ekipman veya tam donanımlı spor salonu) göre size özel program kurgulanır.</p>
+            </div>
+            <div class="faq-item">
+                <h3>İlerleme takibi nasıl yapılıyor?</h3>
+                <p>Haftalık olarak belirlediğimiz günlerde form fotoğrafları, kilo ve ölçüm verileriniz üzerinden analiz yapılarak programınız güncellenir.</p>
+            </div>
         </div>
     </section>
+
+    <!-- İletişim (Yeni Tasarım) -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact__info">
+                <div class="eyebrow">— İLETİŞİM</div>
+                <h2>SÜRECE BAŞLAMAYA<br>HAZIR MISIN?</h2>
+                <p>Formu doldur, 24 saat içinde ücretsiz bir tanışma görüşmesi için sana dönüş yapılsın.</p>
+                <ul class="contact__list">
+                    <li><b>E-posta</b> dogukanmuhtar1@gmail.com</li>
+                    <li><b>Telefon</b> +90 (506) 424 72 41</li>
+                    <li><b>Çalışma Saatleri</b> Pzt–Cmt, 09:00–19:00</li>
+                </ul>
+            </div>
+            <div class="contact__form-wrapper">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>AD SOYAD</label>
+                            <input type="text" id="cName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>TELEFON</label>
+                            <input type="tel" id="cPhone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-POSTA</label>
+                        <input type="email" id="cEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>HEDEFİN</label>
+                        <select id="cGoal">
+                            <option>Yağ Yakımı</option>
+                            <option>Kas Kütlesi</option>
+                            <option>Performans</option>
+                            <option>Genel Sağlık</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>MESAJIN (opsiyonel)</label>
+                        <textarea id="cMsg" placeholder="Hedeflerin ve geçmiş deneyimin hakkında kısaca bahset..."></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">GÖRÜŞME TALEP ET</button>
+                    <div class="form-msg" id="formMsg" style="display:none; color: #dc2626; margin-top: 10px;">Talebin alındı. 24 saat içinde sana dönüş yapılacak.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2026 DOĞU COACHING. Tüm hakları saklıdır.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body> 

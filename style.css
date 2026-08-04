@@ -11,9 +11,14 @@ html {
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #111;
+    background-color: #17161A;
+    color: #ffffff;
     overflow-x: hidden;
+}
+
+/* Bölümleri Ayıran Kalın Beyaz Çizgiler */
+section {
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Navbar Tasarımı */
@@ -22,49 +27,72 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
 }
 
-nav ul {
-    max-width: 1200px;
+.nav-container {
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
-    list-style: none;
+    padding: 1.5rem 3rem;
 }
 
-nav ul img, .logo {
-    width: 80px;
-    height: auto;
-    display: block;
-    object-fit: contain;
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo-text span {
+    color: #000000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 4rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    flex: 1;
+    text-align: center;
 }
 
 .header-menus {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .header-menus:hover {
     color: #000000;
 }
 
-/* Hero Section (Tam Ekran) */
+/* Hero Section */
 .hero {
     height: calc(100vh - 73px);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fitness2.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(23, 22, 26, 0.8), rgba(23, 22, 26, 0.8)), url('fitness2.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     padding: 0 1rem;
+    border-top: none;
 }
 
 .hero h1:nth-of-type(1) {
@@ -85,7 +113,7 @@ nav ul img, .logo {
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #e5e7eb;
+    color: #d1d5db;
 }
 
 .cta-button {
@@ -108,7 +136,7 @@ nav ul img, .logo {
     transform: translateY(-2px);
 }
 
-/* Antrenman Programları Bölümü */
+/* Antrenman Programları */
 .programs {
     min-height: 100vh;
     width: 100%;
@@ -118,13 +146,14 @@ nav ul img, .logo {
     justify-content: center;
     text-align: center;
     padding: 5rem 2rem;
-    background-color: #f9fafb;
+    background-color: #17161A;
 }
 
 .programs h2 {
     font-size: 2.4rem;
     margin-bottom: 3rem;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .programs-grid {
@@ -138,10 +167,10 @@ nav ul img, .logo {
 }
 
 .program-card {
-    background: #ffffff;
+    background: #201F23;
     padding: 2.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
     flex: 1;
     min-width: 260px;
     max-width: 300px;
@@ -162,19 +191,19 @@ nav ul img, .logo {
 }
 
 .program-card p {
-    color: #4b5563;
+    color: #d1d5db;
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* Hizmetler Bölümü */
+/* Hizmetler */
 .services {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f3f4f6;
+    background-color: #17161A;
     text-align: center;
     padding: 5rem 2rem;
 }
@@ -183,6 +212,7 @@ nav ul img, .logo {
     font-size: 2.4rem;
     margin-bottom: 3rem;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .cards {
@@ -196,10 +226,10 @@ nav ul img, .logo {
 }
 
 .card {
-    background: #ffffff;
+    background: #201F23;
     padding: 2.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
     flex: 1;
     min-width: 300px;
     max-width: 400px;
@@ -215,14 +245,15 @@ nav ul img, .logo {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .card p {
-    color: #4b5563;
+    color: #d1d5db;
     font-size: 0.95rem;
 }
 
-/* Hakkımda Bölümü */
+/* Hakkımızda */
 .about {
     min-height: 100vh;
     width: 100%;
@@ -232,61 +263,217 @@ nav ul img, .logo {
     justify-content: center;
     text-align: center;
     padding: 8rem 5rem;
-    background-color: #ffffff;
-    gap: 3.5rem; /* Başlık ile yazı arasındaki mesafeyi buradan artırıp azaltabilirsin */
+    background-color: #17161A;
+    gap: 3.5rem;
 }
 
 .about h2 {
     font-size: 2.4rem;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .about p {
     font-size: 1.5rem;
     line-height: 1.8;
-    color: #374151;
+    color: #d1d5db;
     max-width: 900px;
 }
 
-/* İletişim / Footer Bölümü */
-.contact {
+/* Sıkça Sorulan Sorular */
+.faq-section {
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #17161A;
     padding: 5rem 2rem;
     text-align: center;
 }
 
-.contact h2 {
+.faq-section h2 {
     font-size: 2.4rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     font-weight: 800;
+    color: #ffffff;
 }
 
-.contact-photo {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #dc2626;
-    margin-bottom: 2rem;
-}
-
-.footer-contact {
+.faq-container {
+    max-width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    font-size: 1.1rem;
-    color: #d1d5db;
+    gap: 1.5rem;
+    text-align: left;
 }
 
-/* Kalori Hesaplayıcı Bölümü Tasarımı */
+.faq-item {
+    background: #201F23;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #dc2626;
+    transition: transform 0.3s ease;
+}
 
+.faq-item:hover {
+    transform: translateY(-3px);
+}
+
+.faq-item h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+}
+
+.faq-item p {
+    color: #d1d5db;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* İletişim Bölümü */
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17161A;
+    color: #ffffff;
+    padding: 6rem 3rem;
+}
+
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #dc2626;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.contact__info h2 {
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.contact__info p {
+    color: #d1d5db;
+    max-width: 420px;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact__list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact__list li {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(243, 239, 230, 0.12);
+    font-size: 0.95rem;
+}
+
+.contact__list li:first-child {
+    border-top: none;
+}
+
+.contact__list b {
+    color: #ffffff;
+    min-width: 130px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    color: #d1d5db;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    background: #201F23;
+    border: 1px solid rgba(243, 239, 230, 0.2);
+    color: #ffffff;
+    padding: 0.9rem 1rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #dc2626;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-submit-btn {
+    width: 100%;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-submit-btn:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Calculator Bölümü */
 .calculator {
     min-height: 100vh;
     width: 100%;
@@ -294,7 +481,7 @@ nav ul img, .logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f3f4f6;
+    background-color: #17161A;
     padding: 3rem 1.5rem;
     text-align: center;
 }
@@ -303,13 +490,14 @@ nav ul img, .logo {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-weight: 800;
+    color: #ffffff;
 }
 
 .calculator-container {
-    background: #ffffff;
+    background: #201F23;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     max-width: 400px;
     width: 100%;
     border-top: 3px solid #dc2626;
@@ -331,12 +519,14 @@ nav ul img, .logo {
 .input-group label {
     font-weight: 600;
     font-size: 0.85rem;
-    color: #374151;
+    color: #d1d5db;
 }
 
 .input-group input, .input-group select {
+    background: #17161A;
+    color: #ffffff;
     padding: 0.5rem;
-    border: 1px solid #d1d5db;
+    border: 1px solid rgba(243, 239, 230, 0.2);
     border-radius: 5px;
     font-size: 0.9rem;
     outline: none;
@@ -369,14 +559,24 @@ nav ul img, .logo {
 .calc-result {
     margin-top: 1.2rem;
     padding: 1rem;
-    background-color: #f9fafb;
+    background-color: #17161A;
     border-radius: 6px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid rgba(243, 239, 230, 0.2);
     text-align: center;
 }
 
 .calc-result h3 {
     margin-bottom: 0.3rem;
     font-size: 1rem;
-    color: #111;
+    color: #ffffff;
+}
+
+.site-footer {
+    background-color: #17161A;
+    color: #9ca3af;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
 }
