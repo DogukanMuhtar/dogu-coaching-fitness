@@ -1,40 +1,47 @@
-# Doğu Coaching | Online Fitness Koçluğu
+Doğu Coaching | Online Fitness Koçluğu
+Doğu Coaching, kişiselleştirilmiş antrenman ve beslenme programları sunan modern bir online fitness koçluğu web sitesidir.
 
-Doğu Coaching, bireylerin fitness hedeflerine ulaşmasını sağlamak amacıyla geliştirilmiş, modern ve dinamik bir **Online Fitness ve Beslenme Koçluğu** web sitesi projesidir.
+🚀 Özellikler
+Modern & Koyu Tema: Kırmızı ve siyah renk paleti ile dinamik fitness konsepti.
 
----
+Tam Ekran Bölüm Yapısı: 100vh tabanlı, akıcı geçiş sağlayan modern sayfa tasarımı.
 
-## 🚀 Özellikler
+Akıcı Kaydırma (Smooth Scroll): Menü bağlantıları ve butonlar arası yumuşak geçişler.
 
-* **Modern ve Dinamik Tasarım:** Fitness sektörünün enerjik yapısına uygun kırmızı ve siyah renk paleti ile tasarlanmıştır.
-* **Tam Ekran Bölüm Yapısı (`100vh`):** Kullanıcı deneyimini artıran, ekranı tam kaplayan modern bölümler.
-* **Akıcı Kaydırma (Smooth Scroll):** Menü bağlantıları ve "Hemen Başla" butonu ile sayfa içinde yumuşak geçişler.
-* **Antrenman Programları:** Bilimsel ve en çok tercih edilen sistemlerin detaylı gösterimi:
-  * *Push Pull Legs (PPL)*
-  * *Full Body*
-  * *Bro Split*
-  * *Arnold Split*
-* **Hizmetler ve Hakkımda:** Kişisel antrenman, online takip, beslenme danışmanlığı ve koçluk felsefesi.
-* **İletişim Alanı:** Doğrudan sosyal medya, e-posta ve WhatsApp (Türkiye / KKTC) hatlarına hızlı erişim.
+Antrenman Sistemleri:
 
----
+Push Pull Legs (PPL)
 
-## 🛠️ Kullanılan Teknolojiler
+Full Body
 
-* **HTML5:** Sayfa iskeleti ve semantik yapı.
-* **CSS3:** Flexbox düzenleri, özel tipografi, renk paletleri ve geçiş efektleri.
-* **JavaScript (ES6+):** Sayfa içi akıcı kaydırma ve etkileşimler.
+Bro Split
 
----
+Arnold Split
 
-## 📁 Proje Dosya Yapısı
+İletişim & Destek: Sosyal medya, e-posta ve WhatsApp hatlarına doğrudan erişim.
 
-```text
+📁 Dosya Yapısı
+Plaintext
 doğu-coaching/
 │
-├── index.html       # Ana HTML dosyası
-├── style.css        # Özel tasarım ve stiller
-├── script.js        # JavaScript işlevleri
+├── index.html       # Ana sayfa HTML yapısı
+├── style.css        # Tasarım ve stiller
+├── script.js        # JavaScript etkileşimleri
 ├── logo.png         # Marka logosu
-├── fitness2.jpg     # Hero alanı arka plan görseli
-└── cbum.jpeg        # İletişim bölümü profil/antrenör görseli
+├── fitness2.jpg     # Hero arka plan görseli
+└── cbum.jpeg        # İletişim bölümü profil görseli
+⚙️ Kurulum
+Dosyaları bilgisayarınıza indirin.
+
+Görsellerin (logo.png, fitness2.jpg, cbum.jpeg) proje klasöründe olduğundan emin olun.
+
+index.html dosyasını tarayıcınızda açarak projeyi görüntüleyin.
+
+📞 İletişim
+Koç: Doğukan Muhtar
+
+Instagram: @dogukanmuhtar
+
+E-Posta: dogukanmuhtar1@gmail.com
+
+Telefon / WhatsApp: +90 506 424 72 41 | KKTC WhatsApp: +90 548 866 47 27
