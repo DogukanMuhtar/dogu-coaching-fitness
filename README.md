@@ -42,8 +42,6 @@ A dedicated section explaining the **Doğu Coaching** philosophy, training appro
 
 * Instagram: **@dogukanmuhtar**
 * Email: **[dogukanmuhtar1@gmail.com](mailto:dogukanmuhtar1@gmail.com)**
-* Turkey: **+90 506 424 72 41**
-* Northern Cyprus - WhatsApp: **+90 548 866 47 27**
 
 ## 🛠️ Technologies Used
 
