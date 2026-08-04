@@ -12,11 +12,11 @@
     <nav>
         <ul>
             <li><a href="#"><img src="logo.png" alt="Logo" class="logo"></a></li>
-            <li><a class="header-menus" href="#packages">Üyelik Paketleri</a></li>
-            <li><a class="header-menus" href="#programs">Antrenman Programları</a></li>
-            <li><a class="header-menus" href="#campaigns">Kampanyalar</a></li>
+            <li><a class="header-menus" href="#programs">ANTRENMAN PROGRAMLARI</a></li>
+            <li><a class="header-menus" href="#packages">HİZMETLER</a></li>
+            <li><a class="header-menus" href="#calculator">KALORİ İHTİYACINI HESAPLA</a></li>
             <li><a class="header-menus" href="#contact">BİZE KATIL</a></li>
-            <li><a class="header-menus" href="#contact">Canlı destek</a></li>
+            <li><a class="header-menus" href="#contact">CANLI DESTEK</a></li>
         </ul>
     </nav>
 
@@ -24,7 +24,7 @@
     <section class="hero">
         <h1>DOĞU COACHING</h1>
         <h1>Online Fitness Koçluğu</h1>
-        <p>Hedeflerine ulaşman için kişisel antrenman programları.</p>
+        <p>Hedeflerine ulaşman için gerekli olan her şey.</p>
         <a href="#programs" class="cta-button">Hemen Başla</a>
     </section>
 
@@ -51,9 +51,11 @@
         </div>
     </section>
 
+    
+
     <!-- Hizmetler Bölümü -->
     <section class="services" id="packages">
-        <h2>Hizmetlerimiz</h2>
+        <h2>Hizmetler</h2>
         <div class="cards">
             <div class="card">
                 <h3>Kişisel Antrenman</h3>
@@ -70,9 +72,53 @@
         </div>
     </section>
     
+    <!-- Günlük Kalori Hesaplayıcı Bölümü -->
+    <section class="calculator" id="calculator">
+        <h2>Günlük Kalori Hesaplayıcı</h2>
+        <div class="calculator-container">
+            <div class="calc-form">
+                <div class="input-group">
+                    <label>Kilo (kg)</label>
+                    <input type="number" id="weight" placeholder="Örn: 75">
+                </div>
+                <div class="input-group">
+                    <label>Boy (cm)</label>
+                    <input type="number" id="height" placeholder="Örn: 175">
+                </div>
+                <div class="input-group">
+                    <label>Yaş</label>
+                    <input type="number" id="age" placeholder="Örn: 25">
+                </div>
+                <div class="input-group">
+                    <label>Cinsiyet</label>
+                    <select id="gender">
+                        <option value="male">Erkek</option>
+                        <option value="female">Kadın</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Aktivite Seviyesi</label>
+                    <select id="activity">
+                        <option value="1.2">Hareketsiz (Masa başı iş, spor yok)</option>
+                        <option value="1.375">Çok Az Hareketli (Haftada 1-3 gün spor)</option>
+                        <option value="1.55">Orta Derecede Hareketli (Haftada 3-5 gün spor)</option>
+                        <option value="1.725">Çok Hareketli (Haftada 6-7 gün yoğun spor)</option>
+                        <option value="1.9">Aşırı Hareketli (Profesyonel sporcu / fiziksel iş)</option>
+                    </select>
+                </div>
+                <button onclick="calculateCalories()" class="calc-btn">Hesapla</button>
+            </div>
+            
+            <div class="calc-result" id="resultArea" style="display: none;">
+                <h3>Günlük Kalori İhtiyacınız</h3>
+                <p id="calorieResult">-</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Hakkımda -->
     <section class="about">
-        <h2>Hakkımda</h2>
+        <h2>Hakkımızda</h2>
         <p>
             Doğu Coaching, bireylerin fitness hedeflerine ulaşmasına yardımcı olmak için kurulmuş online koçluk hizmetidir. Kişiye özel antrenman ve beslenme programları ile sürdürülebilir gelişim hedeflenir.
         </p>
@@ -81,7 +127,7 @@
     <!-- İletişim / Footer -->
     <section class="contact" id="contact">
         <h2>İletişim</h2>
-        <img src="cbum.jpeg" alt="Doğukan Muhtar" class="contact-photo">
+        <img src="avatar.png" alt="Doğukan Muhtar" class="contact-photo">
         <div class="footer-contact">
             <span>Instagram: @dogukanmuhtar</span>
             <span>E-Posta: dogukanmuhtar1@gmail.com</span>
