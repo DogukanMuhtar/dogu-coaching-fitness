@@ -1,47 +1,57 @@
-Doğu Coaching | Online Fitness Koçluğu
-Doğu Coaching, kişiselleştirilmiş antrenman ve beslenme programları sunan modern bir online fitness koçluğu web sitesidir.
+# 🏋️ Doğu Coaching
 
-🚀 Özellikler
-Modern & Koyu Tema: Kırmızı ve siyah renk paleti ile dinamik fitness konsepti.
+**Doğu Coaching** is a modern, responsive online fitness coaching website built with **HTML5, CSS3, and JavaScript**. The project features a bold fitness-inspired design with full-screen sections, smooth scrolling, and a clean user experience focused on showcasing coaching services and workout programs.
 
-Tam Ekran Bölüm Yapısı: 100vh tabanlı, akıcı geçiş sağlayan modern sayfa tasarımı.
+## 🚀 Features
 
-Akıcı Kaydırma (Smooth Scroll): Menü bağlantıları ve butonlar arası yumuşak geçişler.
+* 💪 Modern fitness-themed UI with a red & black color palette
+* 📱 Fully responsive design
+* 📌 Sticky navigation bar
+* 🖼️ Hero section with background image and overlay effect
+* 🏋️ Workout program showcase
+* 📋 Coaching services section
+* 👤 About section introducing the coaching philosophy
+* 📞 Contact section with social media and communication details
 
-Antrenman Sistemleri:
 
-Push Pull Legs (PPL)
+### 🏠 Hero
 
-Full Body
+* Full-screen landing page
+* Background fitness image with dark overlay
+* Large typography
+* Call-to-action button with smooth scroll
 
-Bro Split
+### 🏋️ Training Programs
 
-Arnold Split
+* Push Pull Legs (PPL)
+* Full Body
+* Bro Split
+* Arnold Split
 
-İletişim & Destek: Sosyal medya, e-posta ve WhatsApp hatlarına doğrudan erişim.
+### 💼 Services
 
-📁 Dosya Yapısı
-Plaintext
-doğu-coaching/
-│
-├── index.html       # Ana sayfa HTML yapısı
-├── style.css        # Tasarım ve stiller
-├── script.js        # JavaScript etkileşimleri
-├── logo.png         # Marka logosu
-├── fitness2.jpg     # Hero arka plan görseli
-└── cbum.jpeg        # İletişim bölümü profil görseli
-⚙️ Kurulum
-Dosyaları bilgisayarınıza indirin.
+* Personal Training
+* Online Coaching
+* Nutrition Consulting
 
-Görsellerin (logo.png, fitness2.jpg, cbum.jpeg) proje klasöründe olduğundan emin olun.
+### 👤 About
 
-index.html dosyasını tarayıcınızda açarak projeyi görüntüleyin.
+A dedicated section explaining the **Doğu Coaching** philosophy, training approach, and commitment to helping clients achieve their fitness goals.
 
-📞 İletişim
-Koç: Doğukan Muhtar
+### 📞 Contact
 
-Instagram: @dogukanmuhtar
+* Instagram: **@dogukanmuhtar**
+* Email: **[dogukanmuhtar1@gmail.com](mailto:dogukanmuhtar1@gmail.com)**
+* Turkey: **+90 506 424 72 41**
+* Northern Cyprus - WhatsApp: **+90 548 866 47 27**
 
-E-Posta: dogukanmuhtar1@gmail.com
+## 🛠️ Technologies Used
 
-Telefon / WhatsApp: +90 506 424 72 41 | KKTC WhatsApp: +90 548 866 47 27
+* HTML5
+* CSS3
+* JavaScript
+
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
