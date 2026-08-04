@@ -1,0 +1,286 @@
+/* Genel Sıfırlama ve Temel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #111;
+    overflow-x: hidden;
+}
+
+/* Navbar Tasarımı */
+nav {
+    background-color: #dc2626;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    list-style: none;
+}
+
+nav ul img, .logo {
+    width: 60px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.header-menus {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.header-menus:hover {
+    color: #000000;
+}
+
+/* Hero Section (Tam Ekran) */
+.hero {
+    height: calc(100vh - 73px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fitness2.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.hero h1:nth-of-type(1) {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+.hero h1:nth-of-type(2) {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ef4444;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #e5e7eb;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.85rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Antrenman Programları Bölümü */
+.programs {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #f9fafb;
+}
+
+.programs h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+.programs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.program-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 260px;
+    max-width: 300px;
+    border-top: 4px solid #dc2626;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #dc2626;
+}
+
+.program-card p {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Hizmetler Bölümü */
+.services {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.services h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    border-top: 4px solid #dc2626;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card p {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+/* Hakkımda Bölümü */
+.about {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #374151;
+    max-width: 900px;
+}
+
+/* İletişim / Footer Bölümü */
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+}
+
+.contact-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #dc2626;
+    margin-bottom: 2rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    color: #d1d5db;
+}
