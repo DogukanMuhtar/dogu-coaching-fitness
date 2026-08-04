@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doğu Coaching | Online Fitness Koçluğu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -54,21 +58,23 @@
         </div>
     </section>
 
+    
     <!-- Hizmetler -->
     <section class="services" id="packages">
+        <div class="services-eyebrow">ÖZEL SİSTEM</div>
         <h2>Hizmetler</h2>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-num="01">
                 <h3>Kişisel Antrenman</h3>
-                <p>Size Özel Antrenman Programları.</p>
+                <p>Size Özel Antrenman Programları ile hedeflerine en kestirme yoldan ulaş.</p>
             </div>
-            <div class="card">
+            <div class="card" data-num="02">
                 <h3>Online Takip</h3>
-                <p>Haftalık ilerleme ve gelişim kontrolü.</p>
+                <p>Haftalık ilerleme, form analizi ve gelişim kontrolü ile disiplini elden bırakma.</p>
             </div>
-            <div class="card">
+            <div class="card" data-num="03">
                 <h3>Beslenme Danışmanlığı</h3>
-                <p>Hedeflerinize uygun beslenme planları.</p>
+                <p>Hedeflerinize ve yaşam tarzınıza uygun, sürdürülebilir beslenme planları.</p>
             </div>
         </div>
     </section>
@@ -165,18 +171,23 @@
                 <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
-                            <label>AD SOYAD</label>
+                            <label>AD</label>
                             <input type="text" id="cName" required>
                         </div>
                         <div class="form-group">
-                            <label>TELEFON</label>
-                            <input type="tel" id="cPhone" required>
+                            <label>SOYAD</label>
+                            <input type="text" id="cName" required>
                         </div>
+                        
                     </div>
                     <div class="form-group">
                         <label>E-POSTA</label>
                         <input type="email" id="cEmail" required>
                     </div>
+                    <div class="form-group">
+                            <label>TELEFON</label>
+                            <input type="tel" id="cPhone" required>
+                        </div>
                     <div class="form-group">
                         <label>HEDEFİN</label>
                         <select id="cGoal">
