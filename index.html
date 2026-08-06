@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,150 +16,396 @@
         <div class="nav-container">
             <a href="#" class="logo-text">DOĞU<span>.</span>COACHING</a>
             <ul class="nav-links">
-                <li><a class="header-menus" href="#programs">ANTRENMAN PROGRAMLARI</a></li>
+                <li><a class="header-menus" href="#programs">PROGRAMLAR</a></li>
                 <li><a class="header-menus" href="#packages">HİZMETLER</a></li>
-                <li><a class="header-menus" href="#calculator">KALORİ İHTİYACINI HESAPLA</a></li>
+                <li><a class="header-menus" href="#calculator">KALORİ HESAPLA</a></li>
+                <li><a class="header-menus" href="#about">HAKKIMIZDA</a></li>
                 <li><a class="header-menus" href="#faq">SSS</a></li>
                 <li><a class="header-menus" href="#contact">BİZE KATIL</a></li>
-                
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>DOĞU COACHING</h1>
-        <h1>Online Fitness Koçluğu</h1>
-        <p>Hedeflerine ulaşman için gerekli olan her şey.</p>
-        <a href="#programs" class="cta-button">Hemen Başla</a>
+        <div class="hero__inner">
+            <div class="hero__copy">
+                <h1>DOĞU COACHING</h1>
+                <h1>Online Fitness Koçluğu</h1>
+                <p>Hedeflerine ulaşman için gerekli olan her şey.</p>
+                <a href="#programs" class="cta-button">Hemen Başla</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Antrenman Programları -->
+    <!-- Antrenman Programları (Akordeon Kartlar) -->
     <section class="programs" id="programs">
+        <div class="section-eyebrow">PROGRAMLAR</div>
         <h2>Antrenman Programları</h2>
         <div class="programs-grid">
+
             <div class="program-card">
-                <h3>Push Pull Legs (PPL)</h3>
-                <p>İtme, çekme ve bacak günleri olarak ayrılan; kas gelişimini ve toparlanmayı en üst düzeye çıkaran en popüler hipertrofi programı.</p>
+                <span class="program-card__watermark">01</span>
+                <button type="button" class="program-card__header" aria-expanded="false">
+                    <span class="program-card__badge program-card__badge--popular">Popüler</span>
+                    <h3>Push Pull Legs (PPL)</h3>
+                    <p>İtme, çekme ve bacak günleri olarak ayrılan; kas gelişimini ve toparlanmayı en üst düzeye çıkaran en popüler hipertrofi programı.</p>
+                    <span class="program-card__chevron" aria-hidden="true"></span>
+                </button>
+                <div class="program-card__panel">
+                    <div class="program-card__panel-inner">
+                        <div class="program-card__stats">
+                            <div class="program-card__stat"><span>Sıklık</span><strong>5-6 gün/hafta</strong></div>
+                            <div class="program-card__stat"><span>Seviye</span><strong>Orta - İleri</strong></div>
+                            <div class="program-card__stat"><span>Odak</span><strong>Hipertrofi</strong></div>
+                        </div>
+                        <p class="program-card__extra">Her kas grubu haftada iki kez yüksek verimle çalıştırılır; toparlanma süreleri optimize edildiği için hem hacim hem de yoğunluk bir arada yönetilebilir.</p>
+                        <button type="button" class="program-card__cta">Programı Seç</button>
+                    </div>
+                </div>
             </div>
+
             <div class="program-card">
-                <h3>Full Body</h3>
-                <p>Tüm vücut kas gruplarının haftada birden fazla kez çalıştırıldığı, hem yağ yakımı hem de kas kütlesi kazanımı için ideal sistem.</p>
+                <span class="program-card__watermark">02</span>
+                <button type="button" class="program-card__header" aria-expanded="false">
+                    <span class="program-card__badge program-card__badge--balance">Denge</span>
+                    <h3>Full Body</h3>
+                    <p>Tüm vücut kas gruplarının haftada birden fazla kez çalıştırıldığı, hem yağ yakımı hem de kas kütlesi kazanımı için ideal sistem.</p>
+                    <span class="program-card__chevron" aria-hidden="true"></span>
+                </button>
+                <div class="program-card__panel">
+                    <div class="program-card__panel-inner">
+                        <div class="program-card__stats">
+                            <div class="program-card__stat"><span>Sıklık</span><strong>3-4 gün/hafta</strong></div>
+                            <div class="program-card__stat"><span>Seviye</span><strong>Başlangıç - Orta</strong></div>
+                            <div class="program-card__stat"><span>Odak</span><strong>Genel Gelişim</strong></div>
+                        </div>
+                        <p class="program-card__extra">Kısıtlı zamanı olanlar için idealdir; her antrenmanda tüm büyük kas grupları çalışır, esnek programlama sayesinde günlük yaşama kolayca uyum sağlar.</p>
+                        <button type="button" class="program-card__cta">Programı Seç</button>
+                    </div>
+                </div>
             </div>
+
             <div class="program-card">
-                <h3>Bro Split</h3>
-                <p>Her gün tek bir ana kas grubuna odaklanarak (Göğüs, Sırt, Kol vb.) maksimum izolasyon ve tükeniş sağlayan klasik vücut geliştirme rutini.</p>
+                <span class="program-card__watermark">03</span>
+                <button type="button" class="program-card__header" aria-expanded="false">
+                    <span class="program-card__badge program-card__badge--isolation">İzolasyon</span>
+                    <h3>Bro Split</h3>
+                    <p>Her gün tek bir ana kas grubuna odaklanarak (Göğüs, Sırt, Kol vb.) maksimum izolasyon ve tükeniş sağlayan klasik vücut geliştirme rutini.</p>
+                    <span class="program-card__chevron" aria-hidden="true"></span>
+                </button>
+                <div class="program-card__panel">
+                    <div class="program-card__panel-inner">
+                        <div class="program-card__stats">
+                            <div class="program-card__stat"><span>Sıklık</span><strong>5 gün/hafta</strong></div>
+                            <div class="program-card__stat"><span>Seviye</span><strong>Orta - İleri</strong></div>
+                            <div class="program-card__stat"><span>Odak</span><strong>Kas Şekillendirme</strong></div>
+                        </div>
+                        <p class="program-card__extra">Her antrenman tek bir kas grubuna tam kapasiteyle ayrılır; yüksek hacim ve çeşitli hareket açılarıyla derin bir yorgunluk ve şekillendirme sağlar.</p>
+                        <button type="button" class="program-card__cta">Programı Seç</button>
+                    </div>
+                </div>
             </div>
+
             <div class="program-card">
-                <h3>Arnold Split</h3>
-                <p>Efsanevi Arnold Schwarzenegger'in kullandığı; Göğüs-Sırt, Omuz-Kol ve Bacak eşleştirmeleriyle ileri düzey hacim ve dolgunluk programı.</p>
+                <span class="program-card__watermark">04</span>
+                <button type="button" class="program-card__header" aria-expanded="false">
+                    <span class="program-card__badge program-card__badge--advanced">İleri Düzey</span>
+                    <h3>Arnold Split</h3>
+                    <p>Efsanevi Arnold Schwarzenegger'in kullandığı; Göğüs-Sırt, Omuz-Kol ve Bacak eşleştirmeleriyle ileri düzey hacim ve dolgunluk programı.</p>
+                    <span class="program-card__chevron" aria-hidden="true"></span>
+                </button>
+                <div class="program-card__panel">
+                    <div class="program-card__panel-inner">
+                        <div class="program-card__stats">
+                            <div class="program-card__stat"><span>Sıklık</span><strong>6 gün/hafta</strong></div>
+                            <div class="program-card__stat"><span>Seviye</span><strong>İleri Düzey</strong></div>
+                            <div class="program-card__stat"><span>Odak</span><strong>Hacim & Dolgunluk</strong></div>
+                        </div>
+                        <p class="program-card__extra">Antagonist kas gruplarının eşleştirilmesiyle her bölge haftada iki kez yüksek hacimle çalışır; ciddi antrenman deneyimi ve toparlanma kapasitesi gerektirir.</p>
+                        <button type="button" class="program-card__cta">Programı Seç</button>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
-    
+    <!-- Hizmetler -->
     <!-- Hizmetler -->
     <section class="services" id="packages">
-        <div class="services-eyebrow">ÖZEL SİSTEM</div>
-        <h2>Hizmetler</h2>
-        <div class="cards">
-            <div class="card" data-num="01">
+        <div class="section-eyebrow">ÖZEL SİSTEM</div>
+        <h2>HİZMETLER</h2>
+        <div class="services-grid">
+            
+            <div class="service-card" data-num="01">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11M6.5 17.5h11m-11-11v11m11-11v11M2 10h3v4H2v-4zm17 0h3v4h-3v-4z"/></svg>
+                </div>
                 <h3>Kişisel Antrenman</h3>
-                <p>Size Özel Antrenman Programları ile hedeflerine en kestirme yoldan ulaş.</p>
+                <p>Size özel hazırlanan antrenman programları ile hedeflerine en kestirme yoldan ulaş, formunu zirveye taşı.</p>
             </div>
-            <div class="card" data-num="02">
+
+            <div class="service-card" data-num="02">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
                 <h3>Online Takip</h3>
-                <p>Haftalık ilerleme, form analizi ve gelişim kontrolü ile disiplini elden bırakma.</p>
+                <p>Haftalık ilerleme, form analizi ve gelişim kontrolü ile disiplini elden bırakmadan sürekli gelişim.</p>
             </div>
-            <div class="card" data-num="03">
+
+            <div class="service-card" data-num="03">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5z"/><line x1="12" y1="2" x2="12" y2="6"/></svg>
+                </div>
                 <h3>Beslenme Danışmanlığı</h3>
-                <p>Hedeflerinize ve yaşam tarzınıza uygun, sürdürülebilir beslenme planları.</p>
+                <p>Hedeflerinize ve yaşam tarzınıza uygun, yasaksız ve sürdürülebilir esnek beslenme planları.</p>
             </div>
+
         </div>
     </section>
-    
-    <!-- Günlük Kalori Hesaplayıcı -->
-    <section class="calculator" id="calculator">
-        <h2>Günlük Kalori Hesaplayıcı</h2>
-        <div class="calculator-container">
-            <div class="calc-form">
-                <div class="input-group">
-                    <label>Kilo (kg)</label>
-                    <input type="number" id="weight" placeholder="Örn: 75">
+
+    <!-- Günlük Kalori & Makro Hesaplayıcı -->
+    <section class="calc" id="calculator">
+        <div class="services-eyebrow">PROFESYONEL ARAÇ</div>
+        <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 3.5rem; color: #ffffff;">KALORİ & MAKRO HESAPLAYICI</h2>
+
+        <div class="calc__box">
+            <div class="calc__grid">
+
+                <!-- Sol Taraf: Form -->
+                <div class="calc__form">
+                    <h3>Vücut Verilerinizi Girin</h3>
+                    <form id="calcForm" onsubmit="event.preventDefault(); calculateMacros();">
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label>Cinsiyet</label>
+                                <div class="seg">
+                                    <button type="button" class="active" onclick="setGender(this, 'male')">Erkek</button>
+                                    <button type="button" onclick="setGender(this, 'female')">Kadın</button>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Yaş</label>
+                                <input type="number" id="calcAge" placeholder="Örn: 25" required>
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label>Kilo (kg)</label>
+                                <input type="number" id="calcWeight" placeholder="Örn: 75" required>
+                            </div>
+                            <div class="field">
+                                <label>Boy (cm)</label>
+                                <input type="number" id="calcHeight" placeholder="Örn: 178" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Aktivite Seviyesi</label>
+                            <select id="calcActivity">
+                                <option value="1.2">Hareketsiz (Masa başı iş, spor yok)</option>
+                                <option value="1.375">Çok Az Hareketli (Haftada 1-3 gün spor)</option>
+                                <option value="1.55" selected>Orta Derecede Hareketli (Haftada 3-5 gün spor)</option>
+                                <option value="1.725">Çok Hareketli (Haftada 6-7 gün yoğun spor)</option>
+                                <option value="1.9">Aşırı Hareketli (Profesyonel sporcu)</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Ana Hedef</label>
+                            <select id="calcGoal">
+                                <option value="cut">Yağ Yakımı (Definasyon)</option>
+                                <option value="maintain" selected>Formu Koru (Kilo Koruma)</option>
+                                <option value="bulk">Kas Kütlesi Kazanımı (Bulking)</option>
+                            </select>
+                        </div>
+
+                        <button type="button" onclick="calculateMacros()" class="calc__submit">Hesapla ve Planı Oluştur</button>
+                    </form>
                 </div>
-                <div class="input-group">
-                    <label>Boy (cm)</label>
-                    <input type="number" id="height" placeholder="Örn: 175">
+
+                <!-- Sağ Taraf: Sonuçlar -->
+                <div class="calc__results">
+                    <h3>Hesaplama Sonucu</h3>
+
+                    <div class="result-empty" id="resultEmpty">
+                        <div class="plate-mini"></div>
+                        <p>Sol taraftaki alanları doldurup "Hesapla" butonuna basarak günlük kalori ve makro dağılımını görüntüle.</p>
+                    </div>
+
+                    <div class="result-content" id="resultContent" style="display: none;">
+                        <div class="readout-grid">
+                            <div class="readout readout--hero">
+                                <span>Günlük Hedef Kalori</span>
+                                <b id="valCalories">0</b> <span style="font-size: 14px; display:inline;">KCAL</span>
+                            </div>
+                            <div class="readout">
+                                <span>Bazal Metabolizma (BMR)</span>
+                                <b id="valBmr">0</b>
+                            </div>
+                            <div class="readout">
+                                <span>Günlük Kalori İhtiyacı (TDEE)</span>
+                                <b id="valTdee">0</b>
+                            </div>
+                        </div>
+
+                        <div class="macro-bars">
+                            <div class="macro-bar">
+                                <div class="macro-bar__top">
+                                    <span>Protein (<b id="valProteinG">0g</b>)</span>
+                                    <b id="valProteinCal">0 kcal</b>
+                                </div>
+                                <div class="macro-bar__track">
+                                    <div class="macro-bar__fill fill--protein" id="barProtein" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div class="macro-bar">
+                                <div class="macro-bar__top">
+                                    <span>Karbonhidrat (<b id="valCarbg">0g</b>)</span>
+                                    <b id="valCarbCal">0 kcal</b>
+                                </div>
+                                <div class="macro-bar__track">
+                                    <div class="macro-bar__fill fill--carb" id="barCarb" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <div class="macro-bar">
+                                <div class="macro-bar__top">
+                                    <span>Yağ (<b id="valFatg">0g</b>)</span>
+                                    <b id="valFatCal">0 kcal</b>
+                                </div>
+                                <div class="macro-bar__track">
+                                    <div class="macro-bar__fill fill--fat" id="barFat" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc__extra">
+                            <span>Önerilen Su Tüketimi: <b id="valWater">3.2 Litre</b></span>
+                            <span>Koçluk Notu: <b>Esnek Beslenme</b></span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="input-group">
-                    <label>Yaş</label>
-                    <input type="number" id="age" placeholder="Örn: 25">
-                </div>
-                <div class="input-group">
-                    <label>Cinsiyet</label>
-                    <select id="gender">
-                        <option value="male">Erkek</option>
-                        <option value="female">Kadın</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label>Aktivite Seviyesi</label>
-                    <select id="activity">
-                        <option value="1.2">Hareketsiz (Masa başı iş, spor yok)</option>
-                        <option value="1.375">Çok Az Hareketli (Haftada 1-3 gün spor)</option>
-                        <option value="1.55">Orta Derecede Hareketli (Haftada 3-5 gün spor)</option>
-                        <option value="1.725">Çok Hareketli (Haftada 6-7 gün yoğun spor)</option>
-                        <option value="1.9">Aşırı Hareketli (Profesyonel sporcu / fiziksel iş)</option>
-                    </select>
-                </div>
-                <button onclick="calculateCalories()" class="calc-btn">Hesapla</button>
-            </div>
-            
-            <div class="calc-result" id="resultArea" style="display: none;">
-                <h3>Günlük Kalori İhtiyacınız</h3>
-                <p id="calorieResult">-</p>
+
             </div>
         </div>
     </section>
 
     <!-- Hakkımızda -->
-    <section class="about">
-        <h2>Hakkımızda</h2>
-        <p>
-            Doğu Coaching, bireylerin fitness hedeflerine ulaşmasına yardımcı olmak için kurulmuş online koçluk hizmetidir. Kişiye özel antrenman ve beslenme programları ile sürdürülebilir gelişim hedeflenir.
-        </p>
-    </section>
+    <section class="about" id="about">
+        <div class="about-hero">
+            <div class="about-hero__text">
+                <div class="about-eyebrow">— HAKKIMIZDA</div>
+                <h2>DÖNÜŞÜMÜN<br>BAŞLANGIÇ NOKTASI</h2>
+                <p>Doğu Coaching, bireylerin fiziksel ve zihinsel sınırlarını aşması için kurulmuş bir online koçluk sistemidir. Bilimsel temelli antrenman programları, kişiye özel beslenme planları ve haftalık ilerleme takibiyle, hedeflerine en kısa ve sağlıklı yoldan ulaşmanı sağlıyoruz.</p>
+                <div class="about-stats">
+                    <div class="about-stat" data-target="150" data-suffix="+">
+                        <span class="about-stat__number">0</span>
+                        <span class="about-stat__label">Mutlu Danışan</span>
+                    </div>
+                    <div class="about-stat" data-target="5" data-suffix="+">
+                        <span class="about-stat__number">0</span>
+                        <span class="about-stat__label">Yıllık Deneyim</span>
+                    </div>
+                    <div class="about-stat" data-target="98" data-suffix="%">
+                        <span class="about-stat__number">0</span>
+                        <span class="about-stat__label">Memnuniyet</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-hero__image">
+                <div class="about-image-glow"></div>
+                <img src="avatar.PNG" alt="Doğu Coaching - Koç" loading="lazy">
+            </div>
+        </div>
 
-    <!-- Sıkça Sorulan Sorular -->
-    <section class="faq-section" id="faq">
-        <h2>Sıkça Sorulan Sorular</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <h3>Programlar tamamen online mı yürütülüyor?</h3>
-                <p>Evet, antrenman ve beslenme programlarınız tamamen online olarak hazırlanır ve haftalık düzenli check-in'ler ile takip edilir.</p>
+        <div class="about-philosophy">
+            <div class="about-philosophy__line"></div>
+            <blockquote>
+        "Disiplin, motivasyonun bittiği yerde başlar. Süreç doğru kurgulandığında, sonuç kaçınılmazdır."
+            </blockquote>
+            <div class="about-philosophy__line"></div>
+        </div>
+
+        <div class="about-values">
+            <div class="about-value-card">
+                <div class="about-value-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Bilimsel Yaklaşım</h3>
+                <p>Her program, güncel spor bilimi ve beslenme araştırmalarına dayanır. Tahmine değil, veriye güveniriz.</p>
             </div>
-            <div class="faq-item">
-                <h3>Beslenme programında yasaklı besinler var mı?</h3>
-                <p>Kesinlikle hayır. Esnek beslenme modeliyle sevdiğiniz gıdaları kalori ve makro hedeflerinize sadık kalarak tüketebilirsiniz.</p>
+            <div class="about-value-card">
+                <div class="about-value-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <h3>Kişiye Özel</h3>
+                <p>Hazır şablonlar yok. Yaşam tarzın, hedeflerin ve deneyim seviyen baz alınarak tamamen sana özel bir yol haritası çizilir.</p>
             </div>
-            <div class="faq-item">
-                <h3>Evde antrenman yapabilir miyim?</h3>
-                <p>Elbette. Ekipman durumunuza (ev, minimal ekipman veya tam donanımlı spor salonu) göre size özel program kurgulanır.</p>
-            </div>
-            <div class="faq-item">
-                <h3>İlerleme takibi nasıl yapılıyor?</h3>
-                <p>Haftalık olarak belirlediğimiz günlerde form fotoğrafları, kilo ve ölçüm verileriniz üzerinden analiz yapılarak programınız güncellenir.</p>
+            <div class="about-value-card">
+                <div class="about-value-card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3>Sürekli Takip</h3>
+                <p>Haftalık check-in'ler, form analizleri ve gelişim grafikleriyle sürecin her adımında yanında oluyoruz.</p>
             </div>
         </div>
     </section>
 
-    <!-- İletişim (Yeni Tasarım) -->
+    <!-- Sıkça Sorulan Sorular -->
+    <section class="faq-section" id="faq">
+        <div class="section-eyebrow">MERAK EDİLENLER</div>
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-item__header">
+                    <h3>Programlar tamamen online mı yürütülüyor?</h3>
+                    <span class="faq-item__toggle">+</span>
+                </div>
+                <div class="faq-item__answer">
+                    <p>Evet, antrenman ve beslenme programlarınız tamamen online olarak hazırlanır ve haftalık düzenli check-in'ler ile takip edilir.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__header">
+                    <h3>Beslenme programında yasaklı besinler var mı?</h3>
+                    <span class="faq-item__toggle">+</span>
+                </div>
+                <div class="faq-item__answer">
+                    <p>Kesinlikle hayır. Esnek beslenme modeliyle sevdiğiniz gıdaları kalori ve makro hedeflerinize sadık kalarak tüketebilirsiniz.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__header">
+                    <h3>Evde antrenman yapabilir miyim?</h3>
+                    <span class="faq-item__toggle">+</span>
+                </div>
+                <div class="faq-item__answer">
+                    <p>Elbette. Ekipman durumunuza (ev, minimal ekipman veya tam donanımlı spor salonu) göre size özel program kurgulanır.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__header">
+                    <h3>İlerleme takibi nasıl yapılıyor?</h3>
+                    <span class="faq-item__toggle">+</span>
+                </div>
+                <div class="faq-item__answer">
+                    <p>Haftalık olarak belirlediğimiz günlerde form fotoğrafları, kilo ve ölçüm verileriniz üzerinden analiz yapılarak programınız güncellenir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact__info">
                 <div class="eyebrow">— İLETİŞİM</div>
                 <h2>SÜRECE BAŞLAMAYA<br>HAZIR MISIN?</h2>
-                <p>Formu doldur, 24 saat içinde ücretsiz bir tanışma görüşmesi için sana dönüş yapılsın.</p>
+                <p>Formu doldur, 24 saat içinde ücretsiz bir tanışma görüşmesi için sana dönüş yapalım.</p>
                 <ul class="contact__list">
                     <li><b>E-posta</b> dogukanmuhtar1@gmail.com</li>
                     <li><b>Telefon</b> +90 (506) 424 72 41</li>
@@ -176,18 +421,17 @@
                         </div>
                         <div class="form-group">
                             <label>SOYAD</label>
-                            <input type="text" id="cName" required>
+                            <input type="text" id="cSurname" required>
                         </div>
-                        
                     </div>
                     <div class="form-group">
                         <label>E-POSTA</label>
                         <input type="email" id="cEmail" required>
                     </div>
                     <div class="form-group">
-                            <label>TELEFON</label>
-                            <input type="tel" id="cPhone" required>
-                        </div>
+                        <label>TELEFON</label>
+                        <input type="tel" id="cPhone" required>
+                    </div>
                     <div class="form-group">
                         <label>HEDEFİN</label>
                         <select id="cGoal">
@@ -209,9 +453,36 @@
     </section>
 
     <footer class="site-footer">
-        <p>© 2026 DOĞU COACHING. Tüm hakları saklıdır.</p>
+        <div class="footer-glow-line"></div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo-text">DOĞU<span>.</span>COACHING</a>
+                <p>Bilimsel temelli antrenman ve beslenme programlarıyla hedeflerine ulaşmanın en kısa yolu.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="#programs">Antrenman Programları</a></li>
+                    <li><a href="#packages">Hizmetler</a></li>
+                    <li><a href="#calculator">Kalori Hesaplayıcı</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#faq">SSS</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a href="mailto:dogukanmuhtar1@gmail.com">dogukanmuhtar1@gmail.com</a></li>
+                    <li><a href="tel:+905064247241">+90 (506) 424 72 41</a></li>
+                    <li><a href="#contact">Görüşme Talep Et</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 DOĞU COACHING. Tüm hakları saklıdır.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-</body> 
+</body>
 </html>
