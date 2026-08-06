@@ -54,7 +54,8 @@ section {
 }
 
 /* Reusable section eyebrow */
-.section-eyebrow {
+.section-eyebrow,
+.services-eyebrow {
     font-size: 0.8rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -69,7 +70,8 @@ section {
     margin-right: auto;
 }
 
-.section-eyebrow::before {
+.section-eyebrow::before,
+.services-eyebrow::before {
     content: "";
     width: 25px;
     height: 2px;
